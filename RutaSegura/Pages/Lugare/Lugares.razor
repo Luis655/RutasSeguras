@@ -1,0 +1,88 @@
+@page "/lugares"
+
+<PageTitle>LUGARES</PageTitle>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using Policia.Data.Model
+@inject HttpClient http
+
+<div class="title">
+    <div class="title_content">
+        <h1>LUGARES</h1>
+    </div>
+    <div class="title_btn">
+        <a href="/lugares/add" class="btn btn-success">
+        <i class="oi oi-plus"></i>
+            &nbsp
+            Agregar
+           
+        </a>
+
+    </div>
+    </div>
+
+
+
+<p></p>
+
+@if (lugares == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>LATITUD</th>
+                <th>LONGITUD</th>
+                <th>PELIGRO</th>
+                <th>DESCRIPCION</th>
+                <th>OPCIONES</th>
+                
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var lugar in lugares)
+            {
+                <tr>
+                    <td>@lugar.Latitud</td>
+                    <td>@lugar.Longitud</td>
+                    <td>@lugar.Tipopeligro</td>
+                    <td>@lugar.Descripcion</td>
+                    <td>
+                        <span class="icon">
+                            <a href="/lugares/update/" class="oi oi-pencil" title="Editar"></a>
+                        </span>
+                        &nbsp;
+                         <span class="icon">
+                            <a href="/lugares/delete/" class="oi oi-trash" title="Borrar"></a>
+                        </span>
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private readonly string api ="Usuarios/GetAll";
+    private IList<DireccionessegurasResponse>? lugares;
+
+    protected override async Task OnInitializedAsync()
+    {
+        lugares = await http.GetFromJsonAsync<IList<DireccionessegurasResponse>>(api);
+    }
+}

@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Luiss\.nuget\packages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)libsassbuilder\2.0.1\build\LibSassBuilder.props" Condition="Exists('$(NuGetPackageRoot)libsassbuilder\2.0.1\build\LibSassBuilder.props')" />
+  </ImportGroup>
 </Project>

@@ -1,0 +1,77 @@
+@page "/Estaciones"
+
+
+<PageTitle> ESTACIONES </PageTitle>
+
+<br>
+<br>
+<br>
+<br>
+
+@using System.Net.Http.Json
+
+@using System.Net.Http
+
+@using Estacion.Data.Model
+
+@inject HttpClient http
+
+<div class="title">
+    <div class="title  content">
+        <h1>Estaciones</h1>
+    </div>
+    <div class="title_btn">
+        <a href="/estaciones/add" class=" btn btn-success">
+            <i class="oi oi-plus"></i>
+            &nbsp
+            Agregar
+        </a>
+    </div>
+</div>
+
+<p></p>
+
+@if (estaciones == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>NOMBRE DE ESTACIONE</th>
+                <th>DIRECCION DE ESTACION</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var estacion in estaciones)
+            {
+                <tr>
+                    <td>@estacion.Nombreestacion</td>
+                    <td>@estacion.Direccion</td>
+                    <td>
+                        <span class="icon">
+                            <a href="/estaciones/update/@estacion.Idestacion" class="oi oi-pencil" title="Editar"></a>
+                        </span>
+                        &nbsp;
+                         <span class="icon">
+                            <a href="/estaciones/delete/@estacion.Idestacion" class="oi oi-trash" title="Borrar"></a>
+                        </span>
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private readonly string api ="Estacion/GetAll";
+    private IList<Estacion>? estaciones;
+
+    protected override async Task OnInitializedAsync()
+    {
+        estaciones = await http.GetFromJsonAsync<IList<Estacion>>(api);
+    }
+}

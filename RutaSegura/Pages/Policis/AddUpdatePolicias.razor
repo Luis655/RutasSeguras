@@ -1,0 +1,151 @@
+@page "/policias/add"
+@page "/policias/update/{id:int}"
+
+<PageTitle>@(isUpdate ? $"Editar policia con el [id: {policia.Idpolicias}]" : "Agregar Policia")</PageTitle>
+<br>
+<br>
+<br>
+<br>
+
+<h1>@(isUpdate ? $"Editar Policia con el [id: {policia.Idpolicias}]" : "Agregar policia")</h1>
+
+<EditForm Model="@policia">
+    <form class="container border"  @onsubmit="Save">
+        <div class="mb-2">
+        <label class="form-label" for="Nombre">Nombre</label>
+        <InputText class="form-control" @bind-Value="@policia.Nombre" id="Nombre"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Apellidos">Apellidos</label>
+        <InputText class="form-control" @bind-Value="@policia.Apellidos" id="Apellidos"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Edad">Edad</label>
+        <InputNumber type="number" class="form-control" @bind-Value="@policia.Edad" id="Edad"></InputNumber>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Numeroplaca">Numero de placa</label>
+        <InputNumber class="form-control" @bind-Value="@policia.Numeroplaca" id="Numeroplaca"></InputNumber>
+        </div>
+
+
+        
+        <div class="mb-2">
+        <label class="form-label" for="Idrengo">Rango</label>
+        <InputSelect class="form-control" @bind-Value="@policia.Idrango" id="Idrango">
+            <option disabled>Selecciona una Rango...</option>
+        @if (loading)
+        {
+            <option  disabled>cargando....</option>
+        }else if(rangos != null){
+            foreach (var rango in rangos)
+            {
+                <option value="@rango.Idrango">@rango.Tipoderango</option>
+            }
+
+        }
+        </InputSelect>
+        </div>
+
+
+
+        <div class="mb-2">
+        <label class="form-label" for="Idestacion">Estacion</label>
+        <InputSelect class="form-control" @bind-Value="@policia.Idestacion" id="Idestacion">
+            <option disabled>Selecciona una Estacion...</option>
+        @if (loading)
+        {
+            <option disabled>cargando....</option>
+        }else if(Estacione != null){
+            foreach (var estaciones in Estacione)
+            {
+                <option value="@estaciones.Idestacion">@estaciones.Nombreestacion</option>
+            }
+        }
+        </InputSelect>
+        </div>
+
+
+
+
+        <div class="mb-2">
+        <label class="form-label" for="Correo">Correo</label>
+        <InputText type="email" class="form-control" @bind-Value="@policia.Correo" id="Correo"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Contraseña">Contraseña</label>
+        <InputText type="password" class="form-control" @bind-Value="@policia.Contraseña" id="Contraseña"></InputText>
+        </div>
+
+         
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="/policias" class="btn btn-danger">Cancelar</a>
+
+    </form>
+
+</EditForm>
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using Policia.Data.Model
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+
+@code
+{
+    [Parameter]
+    public int id {get; set;}
+    public bool isUpdate {get; set;} = false;
+    bool loading =true;
+
+    IList<Estacion>? Estacione;
+    IList<Genero>? generos;
+    IList<Rango>? rangos;
+    PoliciaCreateRequest policia = new PoliciaCreateRequest();
+    Policia policias = new Policia();
+    protected override async Task OnInitializedAsync(){
+    
+    Estacione = await http.GetFromJsonAsync<IList<Estacion>>("Estacion/GetAll");
+
+    rangos = await http.GetFromJsonAsync<IList<Rango>>("Rango/GetAll");
+
+    generos = await http.GetFromJsonAsync<IList<Genero>>("Genero/GetAll");
+
+    
+
+
+    isUpdate = id !=0;
+    if (isUpdate)
+    {
+        var response = await http.GetFromJsonAsync<PoliciaCreateRequest>($"Policias/GetById/{id}");
+            if (response != null)
+            {
+                policia = response;
+            }
+            
+    }
+    loading =false;
+    }
+    protected async Task Save(){
+
+        HttpResponseMessage? response;
+        if (isUpdate)
+        {
+            response = await http.PutAsJsonAsync<PoliciaCreateRequest>($"Policias/Update/{id}", policia!);
+                //PoliciaCreateRequest? saved = response.Content.ReadFromJsonAsync<PoliciaCreateRequest>().Result;
+
+        }else{
+            response = await http.PostAsJsonAsync<PoliciaCreateRequest>("Policias/Create", policia!);
+                //PoliciaCreateRequest? saved = response.Content.ReadFromJsonAsync<PoliciaCreateRequest>().Result;
+        }
+        
+        NavigationManager.NavigateTo("/Policias");
+    }
+
+
+}

@@ -1,0 +1,96 @@
+@page "/estaciones/add"
+@page "/estaciones/update/{id:int}"
+
+<br>
+<br>
+<br>
+<br>
+<PageTitle>@(isUpdate ? $"Editar policia con el[id: {estacion.idestacion}" : "Agregar Policia")</PageTitle>
+
+<h1>@(isUpdate ? $"Editar Policia con el id: {estacion.idestacion}" : "Agregar policia")</h1>
+
+<EditForm Model="@estacion">
+    <form class="container border" @onsubmit="Save">
+        <div class="mb-2">
+        <label class="form-label" for="Nombre">Nombre</label>
+        <InputText class="form-control" @bind-Value="@estacion.Nombreestacion" id="Nombreestacion"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Apellidos">Estado</label>
+        <InputText class="form-control" @bind-Value="@estacion.Estado" id="Estado"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Edad">Municipio</label>
+        <InputText class="form-control" @bind-Value="@estacion.Municipio" id="Municipio"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Colonia">Colonia</label>
+        <InputText class="form-control" @bind-Value="@estacion.Colonia" id="Colonia"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Calle">Calle</label>
+        <InputText class="form-control" @bind-Value="@estacion.Calle" id="Calle"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Cruzamientos">Cruzamientos</label>
+        <InputText class="form-control" @bind-Value="@estacion.Cruzamientos" id="Cruzamientos"></InputText>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="/Estacion" class="btn btn-danger">Cancelar</a>
+
+    </form>
+
+</EditForm>
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using Estacion.Data.Model
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+
+@code
+{
+    [Parameter]
+    public int id {get; set;}
+    public bool isUpdate {get; set;} = false;
+    bool loading =true;
+    EstacionesCreateRequest estacion = new EstacionesCreateRequest();
+    
+    protected override async Task OnInitializedAsync(){
+    
+    isUpdate = id !=0;
+    if (isUpdate)
+    {
+        var response = await http.GetFromJsonAsync<EstacionesCreateRequest>($"Estacion/GetById/{id}");
+            if (response != null)
+            {
+                estacion = response;
+            }
+            
+    }
+    loading =false;
+    }
+    protected async Task Save(){
+
+        HttpResponseMessage? response;
+        if (isUpdate)
+        {
+            response = await http.PutAsJsonAsync<EstacionesCreateRequest>($"Estacion/Update/{id}", estacion!);
+                //PoliciaCreateRequest? saved = response.Content.ReadFromJsonAsync<PoliciaCreateRequest>().Result;
+
+        }else{
+            response = await http.PostAsJsonAsync<EstacionesCreateRequest>("Estacion/Create", estacion);
+                //PoliciaCreateRequest? saved = response.Content.ReadFromJsonAsync<PoliciaCreateRequest>().Result;
+        }
+        
+        NavigationManager.NavigateTo("/Estaciones");
+    }
+
+
+}

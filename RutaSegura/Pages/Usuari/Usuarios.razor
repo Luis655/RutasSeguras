@@ -1,0 +1,86 @@
+@page "/usuarios"
+
+<PageTitle>Usuarios</PageTitle>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using Policia.Data.Model
+@inject HttpClient http
+
+<div class="title">
+    <div class="title_content">
+        <h1>Usuarios</h1>
+    </div>
+    <div class="title_btn">
+        <a href="/policias/add" class="btn btn-success">
+        <i class="oi oi-plus"></i>
+            &nbsp
+            Agregar
+           
+        </a>
+
+    </div>
+    </div>
+
+
+
+<p></p>
+
+@if (usuarios == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>EDAD</th>
+                <th>DIRECCION</th>
+                <th>OPCIONES</th>
+                
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in usuarios)
+            {
+                <tr>
+                    <td>@usuario.NombreCompleto</td>
+                    <td>@usuario.Edad</td>
+                    <td>@usuario.Direccion</td>
+                    <td>
+                        <span class="icon">
+                            <a href="/usuarios/update/" class="oi oi-pencil" title="Editar"></a>
+                        </span>
+                        &nbsp;
+                         <span class="icon">
+                            <a href="/usuarios/delete/" class="oi oi-trash" title="Borrar"></a>
+                        </span>
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private readonly string api ="Usuarios/GetAll";
+    private IList<UsuarioResponse>? usuarios;
+
+    protected override async Task OnInitializedAsync()
+    {
+        usuarios = await http.GetFromJsonAsync<IList<UsuarioResponse>>(api);
+    }
+}
