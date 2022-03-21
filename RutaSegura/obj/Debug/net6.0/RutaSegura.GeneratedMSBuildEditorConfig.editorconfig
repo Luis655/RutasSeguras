@@ -43,8 +43,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Lugare/AddUpdateLugares.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHVnYXJlXEFkZFVwZGF0ZUx1Z2FyZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Lugare/Lugares.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHVnYXJlXEx1Z2FyZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Lugare/LugaresSegurosDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHVnYXJlXEx1Z2FyZXNTZWd1cm9zRGVsZXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Policis/AddUpdatePolicias.razor]
@@ -57,6 +69,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Policis/Policias.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saWNpc1xQb2xpY2lhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Usuari/AddUpdateUsuarios.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpXEFkZFVwZGF0ZVVzdWFyaW9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Usuari/DeleteUsuarios.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpXERlbGV0ZVVzdWFyaW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Usuari/Usuarios.razor]
@@ -89,4 +109,8 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Home/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/wwwroot/MapAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxNYXBBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

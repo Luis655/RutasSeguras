@@ -1,0 +1,110 @@
+@page "/lugares/add"
+@page "/lugares/update/{id:int}"
+
+<PageTitle>@(isUpdate ? $"Editar el lugar con el [id: {direcciones.Iddireccionsegura}]" : "Agregar Lugar")</PageTitle>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1>@(isUpdate ? $"Editar lugar con el [id: {direcciones.Iddireccionsegura}]" : "Agregar lugar")</h1>
+
+<EditForm Model="@direcciones">
+    <form class="container border"  @onsubmit="Save">
+        <div class="mb-2">
+        <label class="form-label" for="Latitud">Latitud</label>
+        <InputNumber class="form-control" @bind-Value="@direcciones.Latitud" id="Latitud" required placeholder="Escriba la latitud" maxlength="28" minlength="8" type="text"></InputNumber>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Longitud">Longitud</label>
+        <InputNumber class="form-control" @bind-Value="@direcciones.Longitud" id="Apellidos" required placeholder="Escriba los apellidos" maxlength="28" minlength="8" type="text"></InputNumber>
+        </div>
+
+
+        
+        <div class="mb-2">
+        <label class="form-label" for="Categoria">Categoria</label>
+        <InputSelect class="form-control" @bind-Value="@direcciones.Idpeligro" id="Idpeligro" required placeholder="Elija la categoria de peligro" maxlength="28" minlength="8">
+            <option disabled>Selecciona una categoria...</option>
+        @if (loading)
+        {
+            <option  disabled>cargando....</option>
+        }else if(categoriaPeligros != null){
+            foreach (var categoriaPeligros in categoriaPeligros)
+            {
+                <option value="@categoriaPeligros.Idpeligro">@categoriaPeligros.Tipopeligro</option>
+            }
+
+        }
+        </InputSelect>
+        </div>
+
+
+
+         
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="/lugares" class="btn btn-danger">Cancelar</a>
+
+    </form>
+
+</EditForm>
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using DireccionesSeguras.Data.Model
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+
+@code
+{
+    [Parameter]
+    public int id {get; set;}
+    public bool isUpdate {get; set;} = false;
+    bool loading =true;
+
+    IList<CategoriaPeligro>? categoriaPeligros;
+    DireccionessegurasCreate direcciones = new DireccionessegurasCreate();
+    
+    protected override async Task OnInitializedAsync(){
+    
+    categoriaPeligros = await http.GetFromJsonAsync<IList<CategoriaPeligro>>("TipoPeligro/GetAll");
+
+    
+
+    
+
+
+    isUpdate = id !=0;
+    if (isUpdate)
+    {
+        var response = await http.GetFromJsonAsync<DireccionessegurasCreate>($"Lugares/GetById/{id}");
+            if (response != null)
+            {
+                direcciones = response;
+            }
+            
+    }
+    loading =false;
+    }
+    protected async Task Save(){
+
+        HttpResponseMessage? response;
+        if (isUpdate)
+        {
+            response = await http.PutAsJsonAsync<DireccionessegurasCreate>($"Lugares/update/{id}", direcciones!);
+                //PoliciaCreateRequest? saved = response.Content.ReadFromJsonAsync<PoliciaCreateRequest>().Result;
+
+        }else{
+            response = await http.PostAsJsonAsync<DireccionessegurasCreate>("Lugares/Create", direcciones!);
+                //PoliciaCreateRequest? saved = response.Content.ReadFromJsonAsync<PoliciaCreateRequest>().Result;
+        }
+        
+        NavigationManager.NavigateTo("/lugares");
+    }
+
+
+}

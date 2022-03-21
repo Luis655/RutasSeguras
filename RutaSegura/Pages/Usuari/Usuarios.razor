@@ -6,13 +6,15 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 
 
 
 
 @using System.Net.Http.Json
 @using System.Net.Http
-@using Policia.Data.Model
+@using Usuario.Data.Model
 @inject HttpClient http
 
 <div class="title">
@@ -20,7 +22,7 @@
         <h1>Usuarios</h1>
     </div>
     <div class="title_btn">
-        <a href="/policias/add" class="btn btn-success">
+        <a href="/usuarios/add" class="btn btn-success">
         <i class="oi oi-plus"></i>
             &nbsp
             Agregar
@@ -61,11 +63,11 @@ else
                     <td>@usuario.Direccion</td>
                     <td>
                         <span class="icon">
-                            <a href="/usuarios/update/" class="oi oi-pencil" title="Editar"></a>
+                            <a href="/usuarios/update/@usuario.Idusuario" class="oi oi-pencil" title="Editar"></a>
                         </span>
                         &nbsp;
                          <span class="icon">
-                            <a href="/usuarios/delete/" class="oi oi-trash" title="Borrar"></a>
+                            <a href="/usuarios/delete/@usuario.Idusuario" class="oi oi-trash" title="Borrar"></a>
                         </span>
                     </td>
                    

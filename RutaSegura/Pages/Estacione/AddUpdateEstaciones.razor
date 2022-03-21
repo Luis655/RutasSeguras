@@ -5,6 +5,9 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+
 <PageTitle>@(isUpdate ? $"Editar policia con el[id: {estacion.idestacion}" : "Agregar Policia")</PageTitle>
 
 <h1>@(isUpdate ? $"Editar Policia con el id: {estacion.idestacion}" : "Agregar policia")</h1>
@@ -18,7 +21,7 @@
 
         <div class="mb-2">
         <label class="form-label" for="Apellidos">Estado</label>
-        <InputText class="form-control" @bind-Value="@estacion.Estado" id="Estado"></InputText>
+        <InputText class="form-control" @bind-Value="@estacion.Estado" id="Estado" placeholder="Estado" aria-required="true" ></InputText>
         </div>
 
         <div class="mb-2">

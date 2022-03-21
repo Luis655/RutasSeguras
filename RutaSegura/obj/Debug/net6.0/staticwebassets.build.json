@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "68xV9v9c78+ibQTKfWTUkUmDEdQitVFvq5Kr6a4sleE=",
+  "Hash": "bHMkVo/cqJ06wtMkwARaJwr9bCsGGuBtplypEHPkNG0=",
   "Source": "RutaSegura",
   "BasePath": "_content/RutaSegura",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\diseños2\\assets\\img\\portfolio\\submarine.png"
+    },
+    {
+      "Identity": "C:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\wwwroot\\css\\diseños2\\css\\diseñologin.css",
+      "SourceId": "RutaSegura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\wwwroot\\",
+      "BasePath": "_content/RutaSegura",
+      "RelativePath": "css/diseños2/css/diseñologin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\diseños2\\css\\diseñologin.css"
     },
     {
       "Identity": "C:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\wwwroot\\css\\diseños2\\css\\styles.css",
@@ -474,6 +491,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\wwwroot\\MapAdd.cshtml",
+      "SourceId": "RutaSegura",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\wwwroot\\",
+      "BasePath": "_content/RutaSegura",
+      "RelativePath": "MapAdd.cshtml",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot\\MapAdd.cshtml"
     }
   ]
 }

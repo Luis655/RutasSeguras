@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Policia.Data.Model
 {
@@ -10,10 +11,11 @@ namespace Policia.Data.Model
             Policia = new HashSet<Policia>();
            
         }
-
+        [Required]
         public int Idgenero { get; set; }
+        [Required]
         public string Tipigenero { get; set; }
-
+        [Required]
         public virtual ICollection<Policia> Policia { get; set; }
         
     }

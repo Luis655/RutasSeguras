@@ -10,8 +10,8 @@ namespace Policia.Data.Model
             Policia = new HashSet<Policia>();
         }
 
-        public int Idrango { get; set; }
-        public string Tipoderango { get; set; }
+        public int? Idrango { get; set; }
+        public string? Tipoderango { get; set; }
 
         public virtual ICollection<Policia> Policia { get; set; }
     }

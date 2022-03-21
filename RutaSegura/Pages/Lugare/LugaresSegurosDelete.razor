@@ -1,0 +1,38 @@
+@page "/lugares/delete/{id:int}"
+<PageTitle>Borrar Lugar[@direcciones?.Iddireccionsegura]</PageTitle>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>¿Estas seguro que deseas eliminar la direccion con el id "@direcciones?.Iddireccionsegura"?</h1>
+
+ <button  class="btn btn-primary" @onclick="ConfirmarDelete">delete</button>
+ <a href="/lugares" class="btn btn-danger">Cancelar</a>
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using DireccionesSeguras.Data.Model
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+
+@code{
+    [Parameter]
+
+    public int id {get; set;}
+    DireccionessegurasCreate? direcciones;
+    
+    protected override async Task OnInitializedAsync(){
+
+       direcciones = await http.GetFromJsonAsync<DireccionessegurasCreate>($"Lugares/GetById/{id}");   
+    }
+    private async Task ConfirmarDelete(){
+        var response = await http.DeleteAsync($"Lugares/Delete/{id}");
+        if (response.IsSuccessStatusCode)
+        {
+             NavigationManager.NavigateTo("/lugares");
+        }
+        
+    }
+}

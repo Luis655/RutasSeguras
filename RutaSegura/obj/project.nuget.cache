@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "XA4dfRZoAs6AwVa1KIdn3JMtgve3KtaDjidQiqQdxeh6OHWdKUjoLKDyl6QIqQbjiGR0Bk6MeySVFvdR1Y0cHA==",
+  "dgSpecHash": "wmeQGExtbGshEqY7DhVYtUdHTqLzbojDUhDP/T7gVx0J392cfgX6BsrgQoFiyU7I2w54PGSAyX8dT45wTSo0fg==",
   "success": true,
   "projectFilePath": "C:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Luiss\\.nuget\\packages\\libsassbuilder\\2.0.1\\libsassbuilder.2.0.1.nupkg.sha512"
+    "C:\\Users\\Luiss\\.nuget\\packages\\libsassbuilder\\2.0.1\\libsassbuilder.2.0.1.nupkg.sha512",
+    "C:\\Users\\Luiss\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Luiss\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.16.0\\microsoft.identitymodel.jsonwebtokens.6.16.0.nupkg.sha512",
+    "C:\\Users\\Luiss\\.nuget\\packages\\microsoft.identitymodel.logging\\6.16.0\\microsoft.identitymodel.logging.6.16.0.nupkg.sha512",
+    "C:\\Users\\Luiss\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.16.0\\microsoft.identitymodel.tokens.6.16.0.nupkg.sha512",
+    "C:\\Users\\Luiss\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.16.0\\system.identitymodel.tokens.jwt.6.16.0.nupkg.sha512",
+    "C:\\Users\\Luiss\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

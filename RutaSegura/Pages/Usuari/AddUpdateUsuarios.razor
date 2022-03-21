@@ -1,0 +1,122 @@
+@page "/usuarios/add"
+@page "/usuarios/update/{id:int}"
+
+<PageTitle>@(isUpdate ? $"Editar Usuario con el [id: {usuarios.Idusuario}]" : "Agregar Policia")</PageTitle>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1>@(isUpdate ? $"Editar usuario con el [id: {usuarios.Idusuario}]" : "Agregar usuario")</h1>
+
+<EditForm Model="@usuarios">
+    <form class="container border"  @onsubmit="Save">
+        <div class="mb-2">
+        <label class="form-label" for="Nombre">Nombre</label>
+        <InputText class="form-control" @bind-Value="@usuarios.Nombre" id="Nombre" required placeholder="Escriba los nombres" maxlength="28" minlength="8" type="text"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Apellidos">Apellidos</label>
+        <InputText class="form-control" @bind-Value="@usuarios.Apellidos" id="Apellidos" required placeholder="Escriba los apellidos" maxlength="28" minlength="8" type="text"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Edad">Edad</label>
+        <InputNumber type="number" class="form-control" @bind-Value="@usuarios.Edad" id="Edad"required placeholder="Escriba la fecha de nacimiento" maxlength="28" minlength="8"></InputNumber>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Correo">Correo</label>
+        <InputText type="email" class="form-control" @bind-Value="@usuarios.Correo" id="Correo" required placeholder="Escriba un correo" maxlength="28" minlength="8"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Contraseña">Contraseña</label>
+        <InputText type="password" class="form-control" @bind-Value="@usuarios.Contraseña" id="Contraseña" required placeholder="Escriba una contraseña" maxlength="28" minlength="8"></InputText>
+        </div>
+
+
+        <div class="mb-2">
+        <label class="form-label" for="Estado">Estado</label>
+        <InputText class="form-control" @bind-Value="@usuarios.Estado" id="Estado" required placeholder="Escriba su estado" maxlength="28" minlength="8"></InputText>
+        </div>
+        <div class="mb-2">
+        <label class="form-label" for="Estado">Municipio</label>
+        <InputText class="form-control" @bind-Value="@usuarios.Municipio" id="Municipio" required placeholder="Escriba su Municipio" maxlength="28" minlength="8"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Estado">Colonia</label>
+        <InputText class="form-control" @bind-Value="@usuarios.Colonia" id="Colonia" required placeholder="Escriba su Colonia" maxlength="28" minlength="8"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Calle">Calle</label>
+        <InputText class="form-control" @bind-Value="@usuarios.Calle" id="Calle" required placeholder="Escriba su calle" maxlength="28" minlength="8"></InputText>
+        </div>
+
+        <div class="mb-2">
+        <label class="form-label" for="Estado">Cruzamientos</label>
+        <InputText class="form-control" @bind-Value="@usuarios.Cruzamientos" id="Cruzamientos" required placeholder="Escriba los Cruzamientos de su calle" maxlength="28" minlength="8"></InputText>
+        </div>
+
+        
+         
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="/usuarios" class="btn btn-danger">Cancelar</a>
+
+    </form>
+
+</EditForm>
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using Usuario.Data.Model
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+
+@code
+{
+    [Parameter]
+    public int id {get; set;}
+    public bool isUpdate {get; set;} = false;
+    bool loading =true;
+
+    UsuariosCreate usuarios = new UsuariosCreate();
+   
+    protected override async Task OnInitializedAsync(){
+
+    isUpdate = id !=0;
+    if (isUpdate)
+    {
+        var response = await http.GetFromJsonAsync<UsuariosCreate>($"Usuarios/GetById/{id}");
+            if (response != null)
+            {
+                usuarios = response;
+            }
+            
+    }
+    loading =false;
+    }
+    protected async Task Save(){
+
+        HttpResponseMessage? response;
+        if (isUpdate)
+        {
+            response = await http.PutAsJsonAsync<UsuariosCreate>($"Usuarios/update/{id}", usuarios!);
+                //PoliciaCreateRequest? saved = response.Content.ReadFromJsonAsync<PoliciaCreateRequest>().Result;
+
+        }else{
+            response = await http.PostAsJsonAsync<UsuariosCreate>("Usuarios/Create", usuarios!);
+                //PoliciaCreateRequest? saved = response.Content.ReadFromJsonAsync<PoliciaCreateRequest>().Result;
+        }
+        
+        NavigationManager.NavigateTo("/usuarios");
+    }
+
+
+}

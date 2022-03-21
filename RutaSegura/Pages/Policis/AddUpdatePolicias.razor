@@ -6,6 +6,8 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 
 <h1>@(isUpdate ? $"Editar Policia con el [id: {policia.Idpolicias}]" : "Agregar policia")</h1>
 
@@ -13,29 +15,29 @@
     <form class="container border"  @onsubmit="Save">
         <div class="mb-2">
         <label class="form-label" for="Nombre">Nombre</label>
-        <InputText class="form-control" @bind-Value="@policia.Nombre" id="Nombre"></InputText>
+        <InputText class="form-control" @bind-Value="@policia.Nombre" id="Nombre" required placeholder="Escriba los nombres" maxlength="28" minlength="8" type="text"></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Apellidos">Apellidos</label>
-        <InputText class="form-control" @bind-Value="@policia.Apellidos" id="Apellidos"></InputText>
+        <InputText class="form-control" @bind-Value="@policia.Apellidos" id="Apellidos" required placeholder="Escriba los apellidos" maxlength="28" minlength="8" type="text"></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Edad">Edad</label>
-        <InputNumber type="number" class="form-control" @bind-Value="@policia.Edad" id="Edad"></InputNumber>
+        <InputNumber type="number" class="form-control" @bind-Value="@policia.Edad" id="Edad"required placeholder="Escriba la fecha de nacimiento" maxlength="28" minlength="8"></InputNumber>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Numeroplaca">Numero de placa</label>
-        <InputNumber class="form-control" @bind-Value="@policia.Numeroplaca" id="Numeroplaca"></InputNumber>
+        <InputNumber class="form-control" @bind-Value="@policia.Numeroplaca" id="Numeroplaca" required placeholder="Escriba el numero de placa placas" maxlength="28" minlength="8"></InputNumber>
         </div>
 
 
         
         <div class="mb-2">
         <label class="form-label" for="Idrengo">Rango</label>
-        <InputSelect class="form-control" @bind-Value="@policia.Idrango" id="Idrango">
+        <InputSelect class="form-control" @bind-Value="@policia.Idrango" id="Idrango" required placeholder="Elija el rango" maxlength="28" minlength="8">
             <option disabled>Selecciona una Rango...</option>
         @if (loading)
         {
@@ -54,7 +56,7 @@
 
         <div class="mb-2">
         <label class="form-label" for="Idestacion">Estacion</label>
-        <InputSelect class="form-control" @bind-Value="@policia.Idestacion" id="Idestacion">
+        <InputSelect class="form-control" @bind-Value="@policia.Idestacion" id="Idestacion" required placeholder="Elija la estacion" maxlength="28" minlength="8">
             <option disabled>Selecciona una Estacion...</option>
         @if (loading)
         {
@@ -73,12 +75,12 @@
 
         <div class="mb-2">
         <label class="form-label" for="Correo">Correo</label>
-        <InputText type="email" class="form-control" @bind-Value="@policia.Correo" id="Correo"></InputText>
+        <InputText type="email" class="form-control" @bind-Value="@policia.Correo" id="Correo" required placeholder="Escriba un correo" maxlength="28" minlength="8"></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Contraseña">Contraseña</label>
-        <InputText type="password" class="form-control" @bind-Value="@policia.Contraseña" id="Contraseña"></InputText>
+        <InputText type="password" class="form-control" @bind-Value="@policia.Contraseña" id="Contraseña" required placeholder="Escriba una contraseña" maxlength="28" minlength="8"></InputText>
         </div>
 
          

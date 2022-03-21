@@ -1,0 +1,23 @@
+@page "/login"
+
+<PageTitle>Iniciar Secion</PageTitle>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><h5>INICIAR SESION</h5></center>
+
+
+<section class="form-login">
+    <form asp-action="Onpost" method="post">
+        <h5>Formulario Login</h5>
+        
+        <input class="controls" type="text" name="Cor" asp-for="Correo" value="" placeholder="Usuario" required maxlength="28">
+        <input class="controls" type="password" name="Contra" asp-for="Contraseña" required maxlength="28">
+        <input class="buttons" type="submit" name="" id="enviardatos" value="Ingresar">
+        <p><a href="gestionproyectos.html">¿Olvidastes tu Contraseña?</a></p>
+    </form>
+</section>

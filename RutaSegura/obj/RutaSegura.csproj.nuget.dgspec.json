@@ -41,6 +41,14 @@
             "LibSassBuilder": {
               "target": "Package",
               "version": "[2.0.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.16.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.16.0, )"
             }
           },
           "imports": [

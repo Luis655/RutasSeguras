@@ -24,9 +24,38 @@
              <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="~/css/diseños2/js/scripts.js"></script>
+         <script src="~/css/diseños2/js/scripts.js"></script>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+         <script>
+
+           var lugares = new DireccionessegurasResponse();
+
+           function iniciarMapa(){
+             var latitud = 19.388672;
+             var longitud = -99.174023;
+             coordenadas = {
+               lng: longitud,
+               lat: latitud
+             } 
+             generarMapa(coordenadas);
+           }
+           function generarMapa(coordenadas){
+             var mapa = new google.maps.Map(document.getElementById('mapa'),
+             {
+               zoom: 12,
+               center: new google.maps.Map.LatLng(coordenadas.lat, coordenadas.lng)
+             }
+             );
+           }
+
+           
+         </script>
+         <script src="https://maps.googleapis.com/maps/api/js?key=&callback=iniciarMapa"></script>
+         
+
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        

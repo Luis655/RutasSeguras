@@ -25,3 +25,8 @@ C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\obj\Debug\net6.0\RutaSe
 C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\obj\Debug\net6.0\ref\RutaSegura.dll
 C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\obj\Debug\net6.0\RutaSegura.pdb
 C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\obj\Debug\net6.0\RutaSegura.genruntimeconfig.cache
+C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Home\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\obj\Debug\net6.0\RutaSegura.csproj.CopyComplete

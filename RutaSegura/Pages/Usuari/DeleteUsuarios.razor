@@ -1,0 +1,38 @@
+@page "/usuarios/delete/{id:int}"
+<PageTitle>Borrar usuarios[@usuario?.Idusuario]</PageTitle>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>¿Estas seguro que deseas eliminar el usuario con el id "@usuario?.Idusuario"?</h1>
+
+ <button  class="btn btn-primary" @onclick="ConfirmarDelete">delete</button>
+ <a href="/usuarios" class="btn btn-danger">Cancelar</a>
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using Usuario.Data.Model
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+
+@code{
+    [Parameter]
+
+    public int id {get; set;}
+    UsuariosCreate? usuario;
+    
+    protected override async Task OnInitializedAsync(){
+
+       usuario = await http.GetFromJsonAsync<UsuariosCreate>($"Usuarios/GetById/{id}");   
+    }
+    private async Task ConfirmarDelete(){
+        var response = await http.DeleteAsync($"Usuarios/Delete/{id}");
+        if (response.IsSuccessStatusCode)
+        {
+             NavigationManager.NavigateTo("/usuarios");
+        }
+        
+    }
+}

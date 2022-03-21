@@ -1,10 +1,12 @@
 @page "/policias/delete/{id:int}"
-<PageTitle>Borrar Libro[@policia?.Nombre]</PageTitle>
+<PageTitle>Borrar policia[@policia?.Nombre]</PageTitle>
 <br>
 <br>
 <br>
 <br>
-<h1>¿Estas seguro que deseas eliminar el policia con numero de placa "@policia?.Nombre"?</h1>
+<br>
+<br>
+<h1>¿Estas seguro que deseas eliminar el policia con numero de placa "@policia?.Numeroplaca"?</h1>
 
  <button  class="btn btn-primary" @onclick="ConfirmarDelete">delete</button>
  <a href="/policias" class="btn btn-danger">Cancelar</a>
