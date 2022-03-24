@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj",
+  "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -11,145 +11,6 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
-      {
-        "HashCode": -578523605,
-        "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Lugare.Lugares",
-        "AssemblyName": "RutaSegura",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Lugares"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Lugare.Lugares"
-        }
-      },
-      {
-        "HashCode": 1553483281,
-        "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Lugare.Lugares",
-        "AssemblyName": "RutaSegura",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RutaSegura.Pages.Lugare.Lugares"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Lugare.Lugares",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -986691378,
-        "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Lugare.AddUpdateLugares",
-        "AssemblyName": "RutaSegura",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AddUpdateLugares"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Lugare.AddUpdateLugares"
-        }
-      },
-      {
-        "HashCode": 1658602035,
-        "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Lugare.AddUpdateLugares",
-        "AssemblyName": "RutaSegura",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RutaSegura.Pages.Lugare.AddUpdateLugares"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Lugare.AddUpdateLugares",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -480204611,
-        "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Lugare.LugaresSegurosDelete",
-        "AssemblyName": "RutaSegura",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LugaresSegurosDelete"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Lugare.LugaresSegurosDelete"
-        }
-      },
-      {
-        "HashCode": -76530308,
-        "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Lugare.LugaresSegurosDelete",
-        "AssemblyName": "RutaSegura",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RutaSegura.Pages.Lugare.LugaresSegurosDelete"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Lugare.LugaresSegurosDelete",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
       {
         "HashCode": 1242249751,
         "Kind": "Components.Component",
@@ -180,59 +41,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "RutaSegura.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -469628136,
-        "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Estacione.AddUpdateEstaciones",
-        "AssemblyName": "RutaSegura",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AddUpdateEstaciones"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Estacione.AddUpdateEstaciones"
-        }
-      },
-      {
-        "HashCode": -212589857,
-        "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Estacione.AddUpdateEstaciones",
-        "AssemblyName": "RutaSegura",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RutaSegura.Pages.Estacione.AddUpdateEstaciones"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Estacione.AddUpdateEstaciones",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -319,6 +127,59 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "RutaSegura.Pages.Estacione.Estaciones",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -469628136,
+        "Kind": "Components.Component",
+        "Name": "RutaSegura.Pages.Estacione.AddUpdateEstaciones",
+        "AssemblyName": "RutaSegura",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddUpdateEstaciones"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RutaSegura.Pages.Estacione.AddUpdateEstaciones"
+        }
+      },
+      {
+        "HashCode": -212589857,
+        "Kind": "Components.Component",
+        "Name": "RutaSegura.Pages.Estacione.AddUpdateEstaciones",
+        "AssemblyName": "RutaSegura",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RutaSegura.Pages.Estacione.AddUpdateEstaciones"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RutaSegura.Pages.Estacione.AddUpdateEstaciones",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -422,14 +283,14 @@
         }
       },
       {
-        "HashCode": 1883166412,
+        "HashCode": -480204611,
         "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Policis.AddUpdatePolicias",
+        "Name": "RutaSegura.Pages.Lugare.LugaresSegurosDelete",
         "AssemblyName": "RutaSegura",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AddUpdatePolicias"
+            "TagName": "LugaresSegurosDelete"
           }
         ],
         "BoundAttributes": [
@@ -444,18 +305,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Policis.AddUpdatePolicias"
+          "Common.TypeName": "RutaSegura.Pages.Lugare.LugaresSegurosDelete"
         }
       },
       {
-        "HashCode": 50011309,
+        "HashCode": -76530308,
         "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Policis.AddUpdatePolicias",
+        "Name": "RutaSegura.Pages.Lugare.LugaresSegurosDelete",
         "AssemblyName": "RutaSegura",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "RutaSegura.Pages.Policis.AddUpdatePolicias"
+            "TagName": "RutaSegura.Pages.Lugare.LugaresSegurosDelete"
           }
         ],
         "BoundAttributes": [
@@ -470,7 +331,93 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Policis.AddUpdatePolicias",
+          "Common.TypeName": "RutaSegura.Pages.Lugare.LugaresSegurosDelete",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -578523605,
+        "Kind": "Components.Component",
+        "Name": "RutaSegura.Pages.Lugare.Lugares",
+        "AssemblyName": "RutaSegura",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Lugares"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RutaSegura.Pages.Lugare.Lugares"
+        }
+      },
+      {
+        "HashCode": 1553483281,
+        "Kind": "Components.Component",
+        "Name": "RutaSegura.Pages.Lugare.Lugares",
+        "AssemblyName": "RutaSegura",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RutaSegura.Pages.Lugare.Lugares"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RutaSegura.Pages.Lugare.Lugares",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -986691378,
+        "Kind": "Components.Component",
+        "Name": "RutaSegura.Pages.Lugare.AddUpdateLugares",
+        "AssemblyName": "RutaSegura",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddUpdateLugares"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RutaSegura.Pages.Lugare.AddUpdateLugares"
+        }
+      },
+      {
+        "HashCode": 1658602035,
+        "Kind": "Components.Component",
+        "Name": "RutaSegura.Pages.Lugare.AddUpdateLugares",
+        "AssemblyName": "RutaSegura",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RutaSegura.Pages.Lugare.AddUpdateLugares"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RutaSegura.Pages.Lugare.AddUpdateLugares",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -561,14 +508,14 @@
         }
       },
       {
-        "HashCode": 264472829,
+        "HashCode": 1883166412,
         "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Usuari.AddUpdateUsuarios",
+        "Name": "RutaSegura.Pages.Policis.AddUpdatePolicias",
         "AssemblyName": "RutaSegura",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AddUpdateUsuarios"
+            "TagName": "AddUpdatePolicias"
           }
         ],
         "BoundAttributes": [
@@ -583,18 +530,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Usuari.AddUpdateUsuarios"
+          "Common.TypeName": "RutaSegura.Pages.Policis.AddUpdatePolicias"
         }
       },
       {
-        "HashCode": 1300956036,
+        "HashCode": 50011309,
         "Kind": "Components.Component",
-        "Name": "RutaSegura.Pages.Usuari.AddUpdateUsuarios",
+        "Name": "RutaSegura.Pages.Policis.AddUpdatePolicias",
         "AssemblyName": "RutaSegura",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "RutaSegura.Pages.Usuari.AddUpdateUsuarios"
+            "TagName": "RutaSegura.Pages.Policis.AddUpdatePolicias"
           }
         ],
         "BoundAttributes": [
@@ -609,7 +556,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "RutaSegura.Pages.Usuari.AddUpdateUsuarios",
+          "Common.TypeName": "RutaSegura.Pages.Policis.AddUpdatePolicias",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -663,6 +610,59 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "RutaSegura.Pages.Usuari.DeleteUsuarios",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 264472829,
+        "Kind": "Components.Component",
+        "Name": "RutaSegura.Pages.Usuari.AddUpdateUsuarios",
+        "AssemblyName": "RutaSegura",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddUpdateUsuarios"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RutaSegura.Pages.Usuari.AddUpdateUsuarios"
+        }
+      },
+      {
+        "HashCode": 1300956036,
+        "Kind": "Components.Component",
+        "Name": "RutaSegura.Pages.Usuari.AddUpdateUsuarios",
+        "AssemblyName": "RutaSegura",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RutaSegura.Pages.Usuari.AddUpdateUsuarios"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "RutaSegura.Pages.Usuari.AddUpdateUsuarios",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -17201,127 +17201,127 @@
   "RootNamespace": "RutaSegura",
   "Documents": [
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Usuari\\Usuarios.razor",
-      "TargetPath": "Pages\\Usuari\\Usuarios.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\_Layout.cshtml",
-      "TargetPath": "Pages\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Usuari\\AddUpdateUsuarios.razor",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Usuari\\AddUpdateUsuarios.razor",
       "TargetPath": "Pages\\Usuari\\AddUpdateUsuarios.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\_Layout.cshtml",
+      "TargetPath": "Pages\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Estacione\\Estaciones.razor",
-      "TargetPath": "Pages\\Estacione\\Estaciones.razor",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\App.razor",
+      "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Estacione\\AddUpdateEstaciones.razor",
-      "TargetPath": "Pages\\Estacione\\AddUpdateEstaciones.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Lugare\\AddUpdateLugares.razor",
-      "TargetPath": "Pages\\Lugare\\AddUpdateLugares.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\wwwroot\\MapAdd.cshtml",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\wwwroot\\MapAdd.cshtml",
       "TargetPath": "wwwroot\\MapAdd.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Login.razor",
-      "TargetPath": "Pages\\Login.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Usuari\\DeleteUsuarios.razor",
-      "TargetPath": "Pages\\Usuari\\DeleteUsuarios.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Estacione\\DeleteEstaciones.razor",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Estacione\\DeleteEstaciones.razor",
       "TargetPath": "Pages\\Estacione\\DeleteEstaciones.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Policis\\AddUpdatePolicias.razor",
-      "TargetPath": "Pages\\Policis\\AddUpdatePolicias.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Lugare\\Lugares.razor",
-      "TargetPath": "Pages\\Lugare\\Lugares.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Policis\\Policias.razor",
-      "TargetPath": "Pages\\Policis\\Policias.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Policis\\DeletePolicia.razor",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Policis\\DeletePolicia.razor",
       "TargetPath": "Pages\\Policis\\DeletePolicia.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Lugare\\LugaresSegurosDelete.razor",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Lugare\\LugaresSegurosDelete.razor",
       "TargetPath": "Pages\\Lugare\\LugaresSegurosDelete.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Error.cshtml",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Policis\\Policias.razor",
+      "TargetPath": "Pages\\Policis\\Policias.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Lugare\\Lugares.razor",
+      "TargetPath": "Pages\\Lugare\\Lugares.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Estacione\\Estaciones.razor",
+      "TargetPath": "Pages\\Estacione\\Estaciones.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Login.razor",
+      "TargetPath": "Pages\\Login.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\FetchData.razor",
+      "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Usuari\\Usuarios.razor",
+      "TargetPath": "Pages\\Usuari\\Usuarios.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Policis\\AddUpdatePolicias.razor",
+      "TargetPath": "Pages\\Policis\\AddUpdatePolicias.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\_Imports.razor",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Home\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\_Host.cshtml",
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Usuari\\DeleteUsuarios.razor",
+      "TargetPath": "Pages\\Usuari\\DeleteUsuarios.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Counter.razor",
+      "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Lugare\\AddUpdateLugares.razor",
+      "TargetPath": "Pages\\Lugare\\AddUpdateLugares.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\Estacione\\AddUpdateEstaciones.razor",
+      "TargetPath": "Pages\\Estacione\\AddUpdateEstaciones.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
     }

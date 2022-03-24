@@ -14,7 +14,7 @@ public partial class PoliciaCreateRequest
         [Required]
         public string? Apellidos { get; set; }
         [Required]
-        public int? Edad { get; set; }
+        public DateTime? FechNac { get; set; }
         [Required]
         public int? Numeroplaca { get; set; }
         [Required]
@@ -22,13 +22,13 @@ public partial class PoliciaCreateRequest
         [Required]
         public int? Idestacion { get; set; }
         [Required]
-        public int? Idcargo { get; set; } =1;
+        public int? Idcargo { get; set; }
         [Required]
         public string? Correo { get; set; }
         [Required]
         public string? Contraseña { get; set; }
         [Required]
-        public int? idgenero { get; set; }
+        public int? Idgenero { get; set; }
 
     }
         

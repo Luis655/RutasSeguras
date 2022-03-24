@@ -11,7 +11,7 @@ namespace Policia.Data.Model
         [Required]
         public string? NombreCompleto { get; set; }
         [Required]
-        public int? Edad { get; set; }
+        public DateTime FechNac { get; set; }
         [Required]
         public int? Numeroplaca { get; set; }
         [Required]
@@ -20,6 +20,18 @@ namespace Policia.Data.Model
         public string? Nombreestacion{ get; set; }
         [Required]
         public string? Direccion { get; set; }
+        public string? genero { get; set; }
+
+        public int Edad(){
+
+            
+            var fechaActual = DateTime.Now.Year;
+            var edad1 = FechNac.Year;
+
+            var edad = fechaActual -edad1;
+            
+            return edad;
+        }
         
 
     }

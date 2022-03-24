@@ -42,15 +42,16 @@
 }
 else
 {
-    <table class="table">
+   <div class="table-responsive">
+    <table class="table table-bordered table-hover">
         <thead>
-            <tr>
+            <tr class="table-primary">
                 <th>NOMBRE</th>
                 <th>EDAD</th>
+                <th>GENERO</th>
                 <th>DIRECCION</th>
                 <th>OPCIONES</th>
-                
-                
+
                 
             </tr>
         </thead>
@@ -59,7 +60,8 @@ else
             {
                 <tr>
                     <td>@usuario.NombreCompleto</td>
-                    <td>@usuario.Edad</td>
+                    <td>@usuario.Edad()</td>
+                    <td>@usuario.genero</td>
                     <td>@usuario.Direccion</td>
                     <td>
                         <span class="icon">
@@ -75,6 +77,7 @@ else
             }
         </tbody>
     </table>
+    </DIV>
 }
 
 @code {

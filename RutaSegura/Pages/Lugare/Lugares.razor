@@ -41,27 +41,33 @@
 }
 else
 {
-    <table class="table">
+    <div class="table-responsive">
+    <table class="table table-bordered table-hover">
         <thead>
-            <tr>
-                <th>LATITUD</th>
-                <th>LONGITUD</th>
-                <th>PELIGRO</th>
-                <th>DESCRIPCION</th>
-                <th>OPCIONES</th>
+            
+            <tr class="table-primary">
+                <th scope="col">LATITUD</th>
+                <th scope="col">LONGITUD</th>
+                <th scope="col">PELIGRO</th>
+                <th scope="col">DESCRIPCION</th>
+                <th scope="col">OPCIONES</th>
                 
                 
                 
             </tr>
         </thead>
         <tbody>
+            
             @foreach (var lugar in lugares)
             {
+               
                 <tr>
-                    <td>@lugar.Latitud</td>
-                    <td>@lugar.Longitud</td>
-                    <td>@lugar.Tipopeligro</td>
-                    <td>@lugar.Descripcion</td>
+                    @if(@lugar.Tipopeligro =="BAJO")
+                    {
+                    <td class="table-info">@lugar.Latitud</td>
+                    <td class="table-info">@lugar.Longitud</td>
+                    <td class="table-info">@lugar.Tipopeligro</td>
+                    <td class="table-info">@lugar.Descripcion</td>
                     <td>
                         <span class="icon">
                             <a href="/lugares/update/@lugar.Iddireccionsegura" class="oi oi-pencil" title="Editar"></a>
@@ -71,11 +77,45 @@ else
                             <a href="/lugares/delete/@lugar.Iddireccionsegura" class="oi oi-trash" title="Borrar"></a>
                         </span>
                     </td>
+                    }
+                    @if(@lugar.Tipopeligro =="REGULAR")
+                    {
+                    <td class="table-warning">@lugar.Latitud</td>
+                    <td class="table-warning">@lugar.Longitud</td>
+                    <td class="table-warning">@lugar.Tipopeligro</td>
+                    <td class="table-warning">@lugar.Descripcion</td>
+                    <td>
+                        <span class="icon">
+                            <a href="/lugares/update/@lugar.Iddireccionsegura" class="oi oi-pencil" title="Editar"></a>
+                        </span>
+                        &nbsp;
+                         <span class="icon">
+                            <a href="/lugares/delete/@lugar.Iddireccionsegura" class="oi oi-trash" title="Borrar"></a>
+                        </span>
+                    </td>
+                    }
+                     @if(@lugar.Tipopeligro =="ALTO")
+                    {
+                    <td class="table-danger">@lugar.Latitud</td>
+                    <td class="table-danger">@lugar.Longitud</td>
+                    <td class="table-danger">@lugar.Tipopeligro</td>
+                    <td class="table-danger">@lugar.Descripcion</td>
+                    <td>
+                        <span class="icon">
+                            <a href="/lugares/update/@lugar.Iddireccionsegura" class="oi oi-pencil" title="Editar"></a>
+                        </span>
+                        &nbsp;
+                         <span class="icon">
+                            <a href="/lugares/delete/@lugar.Iddireccionsegura" class="oi oi-trash" title="Borrar"></a>
+                        </span>
+                    </td>
+                    }
                    
                 </tr>
             }
         </tbody>
     </table>
+    </div>
 }
 
 @code {

@@ -8,11 +8,15 @@
 <br>
 <br>
 <br>
+<br>
 
-<h1>@(isUpdate ? $"Editar usuario con el [id: {usuarios.Idusuario}]" : "Agregar usuario")</h1>
+
+<center>
+<h1>@(isUpdate ? $"Editar usuario con el [id: {usuarios.Idusuario}]" : "Agregar usuario")</h1></center>
 
 <EditForm Model="@usuarios">
     <form class="container border"  @onsubmit="Save">
+       
         <div class="mb-2">
         <label class="form-label" for="Nombre">Nombre</label>
         <InputText class="form-control" @bind-Value="@usuarios.Nombre" id="Nombre" required placeholder="Escriba los nombres" maxlength="28" minlength="8" type="text"></InputText>
@@ -24,9 +28,31 @@
         </div>
 
         <div class="mb-2">
-        <label class="form-label" for="Edad">Edad</label>
-        <InputNumber type="number" class="form-control" @bind-Value="@usuarios.Edad" id="Edad"required placeholder="Escriba la fecha de nacimiento" maxlength="28" minlength="8"></InputNumber>
+        <label class="form-label" for="FechNac">fecha nacimiento</label>
+        <InputDate class="form-control" @bind-Value="@usuarios.FechNac" id="FechNac"required placeholder="Escriba la fecha de nacimiento" maxlength="01/01/2010" minlength="01/01/1990" ></InputDate>
         </div>
+
+
+
+
+        <div class="mb-2">
+        <label class="form-label" for="Idestacion">Genero</label>
+        <InputSelect class="form-control" @bind-Value="@usuarios.Idgenero" id="Idgenero" required placeholder="Elija el genero" maxlength="28" minlength="8">
+            <option disabled>Selecciona un Genero...</option>
+        @if (loading)
+        {
+            <option disabled>cargando....</option>
+        }else if(generos != null){
+            foreach (var generos in generos)
+            {
+                <option value="@generos.Idgenero">@generos.Tipigenero</option>
+            }
+        }
+        </InputSelect>
+        </div>
+
+
+
 
         <div class="mb-2">
         <label class="form-label" for="Correo">Correo</label>
@@ -73,9 +99,12 @@
 
 </EditForm>
 
+
+
 @using System.Net.Http.Json
 @using System.Net.Http
 @using Usuario.Data.Model
+@using Policia.Data.Model
 @inject HttpClient http
 @inject NavigationManager NavigationManager
 
@@ -85,10 +114,12 @@
     public int id {get; set;}
     public bool isUpdate {get; set;} = false;
     bool loading =true;
-
+    IList<Genero>? generos;
     UsuariosCreate usuarios = new UsuariosCreate();
    
     protected override async Task OnInitializedAsync(){
+
+     generos = await http.GetFromJsonAsync<IList<Genero>>("Genero/GetAll");
 
     isUpdate = id !=0;
     if (isUpdate)

@@ -9,7 +9,7 @@ namespace Usuario.Data.Model
         public int Idusuario { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
-        public int? Edad { get; set; }
+        public DateTime? FechNac { get; set; }
         public string Correo { get; set; }
         public string Contraseña { get; set; }
         public string Estado { get; set; }
@@ -17,6 +17,7 @@ namespace Usuario.Data.Model
         public string Colonia { get; set; }
         public string Calle { get; set; }
         public string Cruzamientos { get; set; }
+        public int? Idgenero { get; set; }
 
     }
 }

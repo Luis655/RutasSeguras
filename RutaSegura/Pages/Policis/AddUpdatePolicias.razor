@@ -8,8 +8,10 @@
 <br>
 <br>
 <br>
+<br>
+<center>
 
-<h1>@(isUpdate ? $"Editar Policia con el [id: {policia.Idpolicias}]" : "Agregar policia")</h1>
+<h1>@(isUpdate ? $"Editar Policia con el [id: {policia.Idpolicias}]" : "Agregar policia")</h1></center>
 
 <EditForm Model="@policia">
     <form class="container border"  @onsubmit="Save">
@@ -24,9 +26,34 @@
         </div>
 
         <div class="mb-2">
-        <label class="form-label" for="Edad">Edad</label>
-        <InputNumber type="number" class="form-control" @bind-Value="@policia.Edad" id="Edad"required placeholder="Escriba la fecha de nacimiento" maxlength="28" minlength="8"></InputNumber>
+        <label class="form-label" for="FechNac">fecha nacimiento</label>
+        <InputDate class="form-control" @bind-Value="@policia.FechNac" id="FechNac"required placeholder="Escriba la fecha de nacimiento" maxlength="01/01/2010" minlength="01/01/1990" ></InputDate>
         </div>
+
+
+
+
+
+        <div class="mb-2">
+        <label class="form-label" for="Idestacion">Genero</label>
+        <InputSelect class="form-control" @bind-Value="@policia.Idgenero" id="Idgenero" required placeholder="Elija el genero" maxlength="28" minlength="8">
+            <option disabled>Selecciona un Genero...</option>
+        @if (loading)
+        {
+            <option disabled>cargando....</option>
+        }else if(generos != null){
+            foreach (var generos in generos)
+            {
+                <option value="@generos.Idgenero">@generos.Tipigenero</option>
+            }
+        }
+        </InputSelect>
+        </div>
+
+
+
+
+
 
         <div class="mb-2">
         <label class="form-label" for="Numeroplaca">Numero de placa</label>

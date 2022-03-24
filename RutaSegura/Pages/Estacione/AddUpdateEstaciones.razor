@@ -7,45 +7,48 @@
 <br>
 <br>
 <br>
+<br>
+<center>
 
-<PageTitle>@(isUpdate ? $"Editar policia con el[id: {estacion.idestacion}" : "Agregar Policia")</PageTitle>
+<PageTitle>@(isUpdate ? $"Editar estacion con el[id: {estacion.idestacion}" : "Agregar Estacion")</PageTitle>
 
-<h1>@(isUpdate ? $"Editar Policia con el id: {estacion.idestacion}" : "Agregar policia")</h1>
+
+<h1>@(isUpdate ? $"Editar Estacion con el id: {estacion.idestacion}" : "Agregar Estacion")</h1></center>
 
 <EditForm Model="@estacion">
     <form class="container border" @onsubmit="Save">
         <div class="mb-2">
         <label class="form-label" for="Nombre">Nombre</label>
-        <InputText class="form-control" @bind-Value="@estacion.Nombreestacion" id="Nombreestacion"></InputText>
+        <InputText class="form-control" @bind-Value="@estacion.Nombreestacion" id="Nombreestacion" aria-required="true" required placeholder="Escriba el nombre de la estacion" maxlength="28" minlength="2"></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Apellidos">Estado</label>
-        <InputText class="form-control" @bind-Value="@estacion.Estado" id="Estado" placeholder="Estado" aria-required="true" ></InputText>
+        <InputText class="form-control" @bind-Value="@estacion.Estado" id="Estado" placeholder="Estado" aria-required="true" required maxlength="28" minlength="2" ></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Edad">Municipio</label>
-        <InputText class="form-control" @bind-Value="@estacion.Municipio" id="Municipio"></InputText>
+        <InputText class="form-control" @bind-Value="@estacion.Municipio" id="Municipio" placeholder="Municipio" aria-required="true" required maxlength="28" minlength="2"></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Colonia">Colonia</label>
-        <InputText class="form-control" @bind-Value="@estacion.Colonia" id="Colonia"></InputText>
+        <InputText class="form-control" @bind-Value="@estacion.Colonia" id="Colonia" placeholder="Colonia" aria-required="true" required maxlength="28" minlength="2"></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Calle">Calle</label>
-        <InputText class="form-control" @bind-Value="@estacion.Calle" id="Calle"></InputText>
+        <InputText class="form-control" @bind-Value="@estacion.Calle" id="Calle" placeholder="Calle" aria-required="true" required maxlength="5" minlength="2"></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Cruzamientos">Cruzamientos</label>
-        <InputText class="form-control" @bind-Value="@estacion.Cruzamientos" id="Cruzamientos"></InputText>
+        <InputText class="form-control" @bind-Value="@estacion.Cruzamientos" id="Cruzamientos" placeholder="Cruzamientos" aria-required="true" required maxlength="5" minlength="2"></InputText>
         </div>
-
+        <center>
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/Estacion" class="btn btn-danger">Cancelar</a>
+        <a href="/Estaciones" class="btn btn-danger">Cancelar</a></center>
 
     </form>
 

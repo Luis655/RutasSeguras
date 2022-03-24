@@ -1,5 +1,6 @@
 ﻿@page "/"
 @namespace RutaSegura.Pages
+
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = "_Layout";
@@ -19,6 +20,9 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="~/css/diseños2/css/styles.css" rel="stylesheet" />
+        
+        
+           
 
 
              <!-- Bootstrap core JS-->
@@ -26,32 +30,9 @@
         <!-- Core theme JS-->
          <script src="~/css/diseños2/js/scripts.js"></script>
          <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-         <script>
-
-           var lugares = new DireccionessegurasResponse();
-
-           function iniciarMapa(){
-             var latitud = 19.388672;
-             var longitud = -99.174023;
-             coordenadas = {
-               lng: longitud,
-               lat: latitud
-             } 
-             generarMapa(coordenadas);
-           }
-           function generarMapa(coordenadas){
-             var mapa = new google.maps.Map(document.getElementById('mapa'),
-             {
-               zoom: 12,
-               center: new google.maps.Map.LatLng(coordenadas.lat, coordenadas.lng)
-             }
-             );
-           }
-
-           
-         </script>
-         <script src="https://maps.googleapis.com/maps/api/js?key=&callback=iniciarMapa"></script>
-         
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7MxtxBe-OjyMn0ODdWwgwRSWS9iUZEs8&callback=initMap&v=weekly"
+          ></script>
+        
 
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->

@@ -42,11 +42,13 @@
 }
 else
 {
-    <table class="table">
+    <div class="table-responsive">
+    <table class="table table-bordered table-hover">
         <thead>
-            <tr>
+            <tr class="table-primary">
                 <th>NOMBRE</th>
                 <th>EDAD</th>
+                <th>GENERO</th>
                 <th># PLACA</th>
                 <th>RANGO</th>
                 <th>ESTACION</th>
@@ -62,7 +64,8 @@ else
             {
                 <tr>
                     <td>@policia.NombreCompleto</td>
-                    <td>@policia.Edad</td>
+                    <td>@policia.Edad()</td>
+                    <td>@policia.genero</td>
                     <td>@policia.Numeroplaca</td>
                     <td>@policia.Tipoderango</td>
                     <td>@policia.Nombreestacion</td>
@@ -81,6 +84,7 @@ else
             }
         </tbody>
     </table>
+    </div>
 }
 
 @code {

@@ -8,9 +8,9 @@ namespace DireccionesSeguras.Data.Model
     {
         public int  Iddireccionsegura { get; set; }
         [Required]
-        public int? Latitud { get; set; }
+        public string? Latitud { get; set; }
          [Required]
-        public int? Longitud { get; set; }
+        public string? Longitud { get; set; }
          [Required]
          public string? Tipopeligro { get; set; }
           [Required]

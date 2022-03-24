@@ -8,19 +8,21 @@
 <br>
 <br>
 <br>
+<br>
+<center>
 
-<h1>@(isUpdate ? $"Editar lugar con el [id: {direcciones.Iddireccionsegura}]" : "Agregar lugar")</h1>
+<h1>@(isUpdate ? $"Editar lugar con el [id: {direcciones.Iddireccionsegura}]" : "Agregar lugar")</h1></center>
 
 <EditForm Model="@direcciones">
     <form class="container border"  @onsubmit="Save">
         <div class="mb-2">
         <label class="form-label" for="Latitud">Latitud</label>
-        <InputNumber class="form-control" @bind-Value="@direcciones.Latitud" id="Latitud" required placeholder="Escriba la latitud" maxlength="28" minlength="8" type="text"></InputNumber>
+        <InputText class="form-control" @bind-Value="@direcciones.Latitud" id="Latitud" required placeholder="Escriba la latitud" maxlength="28" minlength="8" type="text"></InputText>
         </div>
 
         <div class="mb-2">
         <label class="form-label" for="Longitud">Longitud</label>
-        <InputNumber class="form-control" @bind-Value="@direcciones.Longitud" id="Apellidos" required placeholder="Escriba los apellidos" maxlength="28" minlength="8" type="text"></InputNumber>
+        <InputText class="form-control" @bind-Value="@direcciones.Longitud" id="Apellidos" required placeholder="Escriba la Longitud" maxlength="28" minlength="8" type="text"></InputText>
         </div>
 
 
@@ -33,8 +35,10 @@
         {
             <option  disabled>cargando....</option>
         }else if(categoriaPeligros != null){
+            
             foreach (var categoriaPeligros in categoriaPeligros)
             {
+                
                 <option value="@categoriaPeligros.Idpeligro">@categoriaPeligros.Tipopeligro</option>
             }
 

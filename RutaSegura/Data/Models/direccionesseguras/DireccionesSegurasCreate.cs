@@ -7,8 +7,8 @@ namespace DireccionesSeguras.Data.Model
     public partial class DireccionessegurasCreate
     {
         public int Iddireccionsegura { get; set; }
-        public int? Latitud { get; set; }
-        public int? Longitud { get; set; }
+        public string? Latitud { get; set; }
+        public string? Longitud { get; set; }
         public int? Idpeligro { get; set; }
 
     }
