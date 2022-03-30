@@ -1,8 +1,11 @@
+<AuthorizeView>
+<Authorized>
 @page "/Estaciones"
 
 
 <PageTitle> ESTACIONES </PageTitle>
 
+<br>
 <br>
 <br>
 <br>
@@ -17,7 +20,7 @@
 @using Estacion.Data.Model
 
 @inject HttpClient http
-
+<div class="container border">
 <div class="title">
     <div class="title  content">
         <h1>Estaciones</h1>
@@ -30,7 +33,7 @@
         </a>
     </div>
 </div>
-
+</div>
 <p></p>
 
 @if (estaciones == null)
@@ -80,3 +83,9 @@ else
         estaciones = await http.GetFromJsonAsync<IList<Estacion>>(api);
     }
 }
+
+ </Authorized>
+ <NotAuthorized>
+     <center><strong><p><h6>USTED NO ESTA AUTORIZADO!!!!!!</h6></p></strong></center>
+ </NotAuthorized>
+       </AuthorizeView>

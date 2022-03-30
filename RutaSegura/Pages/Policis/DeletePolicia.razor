@@ -1,3 +1,5 @@
+<AuthorizeView>
+<Authorized>
 @page "/policias/delete/{id:int}"
 <PageTitle>Borrar policia[@policia?.Nombre]</PageTitle>
 <br>
@@ -6,12 +8,13 @@
 <br>
 <br>
 <br>
+<div class="container border">
 <center>
 <h1>¿Estas seguro que deseas eliminar el policia con numero de placa "@policia?.Numeroplaca"?</h1>
 
  <button  class="btn btn-primary" @onclick="ConfirmarDelete">delete</button>
  <a href="/policias" class="btn btn-danger">Cancelar</a></center>
-
+</div>
 @using System.Net.Http.Json
 @using System.Net.Http
 @using Policia.Data.Model
@@ -37,3 +40,10 @@
         
     }
 }
+ </Authorized>
+ 
+ <NotAuthorized>
+     <br><br><br><br><br><br><br><br><br>
+     <center><strong><p><h5>USTED NO ES UN ADMINISTRADIR</h5></p></strong></center>
+ </NotAuthorized>
+       </AuthorizeView>

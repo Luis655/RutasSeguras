@@ -14,6 +14,8 @@ namespace DireccionesSeguras.Data.Model
          [Required]
          public string? Tipopeligro { get; set; }
           [Required]
+
+        public Boolean Verificacion { get; set; }
         public string? Descripcion { get; set; }
 
     }

@@ -8,109 +8,141 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RutaSegura
 build_property.RootNamespace = RutaSegura
-build_property.ProjectDir = C:\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura\
+build_property.ProjectDir = C:\BlazorWebApp\RutaSegura\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\AplicacionesWebparaI14.0\BlazorWebApp\RutaSegura
+build_property.MSBuildProjectDirectory = C:\BlazorWebApp\RutaSegura
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/App.razor]
+[C:/BlazorWebApp/RutaSegura/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Counter.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Estacione/AddUpdateEstaciones.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Estacione/AddUpdateEstaciones.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YWNpb25lXEFkZFVwZGF0ZUVzdGFjaW9uZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Estacione/DeleteEstaciones.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Estacione/DeleteEstaciones.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YWNpb25lXERlbGV0ZUVzdGFjaW9uZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Estacione/Estaciones.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Estacione/Estaciones.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YWNpb25lXEVzdGFjaW9uZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/FetchData.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Index.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Login.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Lugare/AddUpdateLugares.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazorWebApp/RutaSegura/Pages/Lugare/AddUpdateLugares.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHVnYXJlXEFkZFVwZGF0ZUx1Z2FyZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Lugare/Lugares.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Lugare/Lugares.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHVnYXJlXEx1Z2FyZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Lugare/LugaresSegurosDelete.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Lugare/LugaresSegurosDelete.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHVnYXJlXEx1Z2FyZXNTZWd1cm9zRGVsZXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Policis/AddUpdatePolicias.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/MApas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUFwYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazorWebApp/RutaSegura/Pages/Nosotros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm9zb3Ryb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazorWebApp/RutaSegura/Pages/Policis/AddUpdatePolicias.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saWNpc1xBZGRVcGRhdGVQb2xpY2lhcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Policis/DeletePolicia.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Policis/DeletePolicia.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saWNpc1xEZWxldGVQb2xpY2lhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Policis/Policias.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Policis/Policias.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saWNpc1xQb2xpY2lhcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Usuari/AddUpdateUsuarios.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Usuari/AddUpdateUsuarios.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpXEFkZFVwZGF0ZVVzdWFyaW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Usuari/DeleteUsuarios.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Usuari/DeleteUsuarios.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpXERlbGV0ZVVzdWFyaW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Usuari/Usuarios.razor]
+[C:/BlazorWebApp/RutaSegura/Pages/Usuari/Usuarios.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpXFVzdWFyaW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Shared/SurveyPrompt.razor]
+[C:/BlazorWebApp/RutaSegura/Shared/FooterMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZvb3Rlck1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazorWebApp/RutaSegura/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/_Imports.razor]
+[C:/BlazorWebApp/RutaSegura/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Shared/MainLayout.razor]
+[C:/BlazorWebApp/RutaSegura/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-alxxq4t7pb
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Shared/NavMenu.razor]
+[C:/BlazorWebApp/RutaSegura/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-axvbnkxby9
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/Error.cshtml]
+[C:/BlazorWebApp/RutaSegura/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/_Host.cshtml]
+[C:/BlazorWebApp/RutaSegura/Pages/mapaa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWFwYWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazorWebApp/RutaSegura/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazorWebApp/RutaSegura/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazorWebApp/RutaSegura/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazorWebApp/RutaSegura/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/Pages/_Layout.cshtml]
+[C:/BlazorWebApp/RutaSegura/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AplicacionesWebparaI14.0/BlazorWebApp/RutaSegura/wwwroot/MapAdd.cshtml]
+[C:/BlazorWebApp/RutaSegura/wwwroot/MapAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxNYXBBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

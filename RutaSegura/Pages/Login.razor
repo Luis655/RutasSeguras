@@ -1,6 +1,17 @@
 @page "/login"
-
+@namespace login.Token
 <PageTitle>Iniciar Secion</PageTitle>
+
+@using System.Net.Http.Json
+@using System.Net.Http
+@using Microsoft.AspNetCore.Mvc
+@using User.Data
+@inject HttpClient http
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Http
+@using BlazorCRUD.Client.Auth
+@using RutaSegura.Helpers
+@inject ILoginService loginService
 
 <br>
 <br>
@@ -12,12 +23,68 @@
 
 
 <section class="form-login">
-    <form asp-action="Onpost" method="post">
+    <form @onsubmit="Save">
         <h5>Inicia sesion</h5>
-        
-        <input class="controls" type="text" name="Cor" asp-for="Correo" value="" placeholder="Usuario" required maxlength="28">
-        <input class="controls" type="password" name="Contra" asp-for="Contraseña" placeholder="Contraseña" required maxlength="28">
+      <center><h1>@policia.cargo</h1></center>
+        <input class="controls" type="email" name="Cor" @bind-value="@policia.correo" placeholder="Usuario" required>
+        <input class="controls" type="password" name="Contra" @bind-value="@policia.contraseña" placeholder="Contraseña" required >
         <input class="buttons" type="submit" name="" id="enviardatos" value="Ingresar">
         <p><a href="gestionproyectos.html">¿Olvidastes tu Contraseña?</a></p>
     </form>
 </section>
+
+
+
+
+
+@code
+{
+    private int currentCount = 0;
+    private User policia = new User();
+    protected async Task Save()
+    {
+        //HttpResponseMessage? response;
+        
+        var response = await http.PostAsJsonAsync<User>("/api/Cuentas/Login", policia!);
+        
+        
+        //User? saved = response.Content.ReadFromJsonAsync<User>().Result;
+
+        if (response.IsSuccessStatusCode)
+        {
+            
+            await loginService.Login(response.Content.ReadAsStringAsync().Result);
+            NavigationManager.NavigateTo("/");
+        }
+        else
+        {
+           
+            currentCount++;
+            if (currentCount==1)
+            {
+                policia.cargo="Error de la contraseña o correo";
+            }
+            if(currentCount ==2 && policia.correo == policia.correo){
+            policia.cargo ="Porfavor Escriba datos correctos";
+            //NavigationManager.NavigateTo("/login");
+             }
+             if(currentCount ==3){
+            policia.cargo ="Se equivoco de nuevo";
+            //NavigationManager.NavigateTo("/login");
+             }
+             if(currentCount >=4){
+            policia.cargo ="La cuenta no existe";
+            //NavigationManager.NavigateTo("/login");
+            currentCount=0;
+             }
+             
+            
+           
+            
+           
+
+        }
+
+    }
+
+}

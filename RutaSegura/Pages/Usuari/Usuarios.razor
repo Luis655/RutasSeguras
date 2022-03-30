@@ -1,7 +1,10 @@
+<AuthorizeView>
+<Authorized >
 @page "/usuarios"
 
 <PageTitle>Usuarios</PageTitle>
 
+<br>
 <br>
 <br>
 <br>
@@ -16,7 +19,7 @@
 @using System.Net.Http
 @using Usuario.Data.Model
 @inject HttpClient http
-
+<div class="container border">
 <div class="title">
     <div class="title_content">
         <h1>Usuarios</h1>
@@ -31,7 +34,7 @@
 
     </div>
     </div>
-
+</div>
 
 
 <p></p>
@@ -89,3 +92,8 @@ else
         usuarios = await http.GetFromJsonAsync<IList<UsuarioResponse>>(api);
     }
 }
+ </Authorized>
+ <NotAuthorized>
+     <center><strong><p><h6>USTED NO ESTA AUTORIZADO!!!!</h6></p></strong></center>
+ </NotAuthorized>
+       </AuthorizeView>

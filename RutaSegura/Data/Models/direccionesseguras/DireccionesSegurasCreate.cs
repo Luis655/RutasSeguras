@@ -10,6 +10,7 @@ namespace DireccionesSeguras.Data.Model
         public string? Latitud { get; set; }
         public string? Longitud { get; set; }
         public int? Idpeligro { get; set; }
+        public Boolean Verificacion { get; set; }
 
     }
 }

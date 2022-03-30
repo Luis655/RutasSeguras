@@ -1,7 +1,9 @@
+
 @page "/policias"
 
 <PageTitle>POLICIAS</PageTitle>
 
+<br>
 <br>
 <br>
 <br>
@@ -17,6 +19,10 @@
 @using Policia.Data.Model
 @inject HttpClient http
 
+<AuthorizeView Roles="2">
+     <Authorized>
+    
+        <div class="container border">
 <div class="title">
     <div class="title_content">
         <h1>POLICIAS</h1>
@@ -31,7 +37,7 @@
 
     </div>
     </div>
-
+        </div>
 
 
 <p></p>
@@ -86,6 +92,13 @@ else
     </table>
     </div>
 }
+</Authorized>
+
+<NotAuthorized>
+ <center><strong><p>USTED NO ESTA AUTORIZADO!!!!</p></strong></center>
+</NotAuthorized>
+</AuthorizeView>
+
 
 @code {
     private readonly string api ="Policias/GetAll";

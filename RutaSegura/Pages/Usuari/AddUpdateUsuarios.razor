@@ -10,10 +10,11 @@
 <br>
 <br>
 
-
+<div class="container border">
 <center>
+    
 <h1>@(isUpdate ? $"Editar usuario con el [id: {usuarios.Idusuario}]" : "Agregar usuario")</h1></center>
-
+</div>
 <EditForm Model="@usuarios">
     <form class="container border"  @onsubmit="Save">
        

@@ -1,3 +1,5 @@
+<AuthorizeView>
+<Authorized Context="Role">
 @page "/estaciones/add"
 @page "/estaciones/update/{id:int}"
 
@@ -8,13 +10,14 @@
 <br>
 <br>
 <br>
+<div class="container border">
 <center>
 
 <PageTitle>@(isUpdate ? $"Editar estacion con el[id: {estacion.idestacion}" : "Agregar Estacion")</PageTitle>
 
 
 <h1>@(isUpdate ? $"Editar Estacion con el id: {estacion.idestacion}" : "Agregar Estacion")</h1></center>
-
+</div>
 <EditForm Model="@estacion">
     <form class="container border" @onsubmit="Save">
         <div class="mb-2">
@@ -100,3 +103,6 @@
 
 
 }
+
+ </Authorized>
+       </AuthorizeView>

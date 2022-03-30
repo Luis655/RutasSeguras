@@ -1,3 +1,5 @@
+<AuthorizeView>
+<Authorized>
 @page "/lugares"
 
 <PageTitle>LUGARES</PageTitle>
@@ -8,14 +10,12 @@
 <br>
 <br>
 <br>
-
-
-
+<br>
 @using System.Net.Http.Json
 @using System.Net.Http
 @using DireccionesSeguras.Data.Model
 @inject HttpClient http
-
+<div class="container border">
 <div class="title">
     <div class="title_content">
         <h1>LUGARES</h1>
@@ -30,7 +30,7 @@
 
     </div>
     </div>
-
+</div>
 
 
 <p></p>
@@ -50,6 +50,7 @@ else
                 <th scope="col">LONGITUD</th>
                 <th scope="col">PELIGRO</th>
                 <th scope="col">DESCRIPCION</th>
+                <th scope="col">STATUS</th>
                 <th scope="col">OPCIONES</th>
                 
                 
@@ -68,6 +69,12 @@ else
                     <td class="table-info">@lugar.Longitud</td>
                     <td class="table-info">@lugar.Tipopeligro</td>
                     <td class="table-info">@lugar.Descripcion</td>
+                    @if (@lugar.Verificacion == true)
+                    {
+                        <td class="table-info">Verificada</td>
+                    }else{
+                        <td class="table-info">No Verificada</td>
+                    }
                     <td>
                         <span class="icon">
                             <a href="/lugares/update/@lugar.Iddireccionsegura" class="oi oi-pencil" title="Editar"></a>
@@ -84,6 +91,12 @@ else
                     <td class="table-warning">@lugar.Longitud</td>
                     <td class="table-warning">@lugar.Tipopeligro</td>
                     <td class="table-warning">@lugar.Descripcion</td>
+                    @if (@lugar.Verificacion == true)
+                    {
+                        <td class="table-info">Verificada</td>
+                    }else{
+                        <td class="table-info">No Verificada</td>
+                    }
                     <td>
                         <span class="icon">
                             <a href="/lugares/update/@lugar.Iddireccionsegura" class="oi oi-pencil" title="Editar"></a>
@@ -100,6 +113,13 @@ else
                     <td class="table-danger">@lugar.Longitud</td>
                     <td class="table-danger">@lugar.Tipopeligro</td>
                     <td class="table-danger">@lugar.Descripcion</td>
+                    @if (@lugar.Verificacion == true)
+                    {
+                        <td class="table-info">Verificada</td>
+                    }else{
+                        <td class="table-info">No Verificada</td>
+                    }
+                     
                     <td>
                         <span class="icon">
                             <a href="/lugares/update/@lugar.Iddireccionsegura" class="oi oi-pencil" title="Editar"></a>
@@ -127,3 +147,8 @@ else
         lugares = await http.GetFromJsonAsync<IList<DireccionessegurasResponse>>(api);
     }
 }
+ </Authorized>
+ <NotAuthorized>
+     <center><strong><p><h6>USTED NO ESTA AUTORIZADO!!!!!!</h6></p></strong></center>
+ </NotAuthorized>
+       </AuthorizeView>

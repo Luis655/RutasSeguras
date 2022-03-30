@@ -1,5 +1,8 @@
+<AuthorizeView>
+<Authorized Context="Role">
 @page "/policias/add"
 @page "/policias/update/{id:int}"
+
 
 <PageTitle>@(isUpdate ? $"Editar policia con el [id: {policia.Idpolicias}]" : "Agregar Policia")</PageTitle>
 <br>
@@ -9,16 +12,22 @@
 <br>
 <br>
 <br>
+<div class="container border">
 <center>
 
 <h1>@(isUpdate ? $"Editar Policia con el [id: {policia.Idpolicias}]" : "Agregar policia")</h1></center>
 
+</div>
+    
 <EditForm Model="@policia">
+  
     <form class="container border"  @onsubmit="Save">
+   
         <div class="mb-2">
         <label class="form-label" for="Nombre">Nombre</label>
         <InputText class="form-control" @bind-Value="@policia.Nombre" id="Nombre" required placeholder="Escriba los nombres" maxlength="28" minlength="8" type="text"></InputText>
         </div>
+       
 
         <div class="mb-2">
         <label class="form-label" for="Apellidos">Apellidos</label>
@@ -119,6 +128,10 @@
 
 </EditForm>
 
+<NotAuthorized>
+    <center><strong><p><h1>USTED NO ESTA AUTORIZADO!!!!!</h1></p></strong></center>
+    </NotAuthorized>
+
 @using System.Net.Http.Json
 @using System.Net.Http
 @using Policia.Data.Model
@@ -178,3 +191,5 @@
 
 
 }
+ </Authorized>
+       </AuthorizeView>

@@ -1,3 +1,5 @@
+<AuthorizeView>
+<Authorized Context="Role">
 @page "/lugares/add"
 @page "/lugares/update/{id:int}"
 
@@ -9,10 +11,11 @@
 <br>
 <br>
 <br>
+<div class="container border">
 <center>
 
 <h1>@(isUpdate ? $"Editar lugar con el [id: {direcciones.Iddireccionsegura}]" : "Agregar lugar")</h1></center>
-
+</div>
 <EditForm Model="@direcciones">
     <form class="container border"  @onsubmit="Save">
         <div class="mb-2">
@@ -25,6 +28,16 @@
         <InputText class="form-control" @bind-Value="@direcciones.Longitud" id="Apellidos" required placeholder="Escriba la Longitud" maxlength="28" minlength="8" type="text"></InputText>
         </div>
 
+
+        <AuthorizeView Context="Roles" Roles="2">
+            <Authorized>
+        <div class="mb-2">
+        <label class="form-label" for="Verificacion">Verificacion</label>
+        <input class="form-check-input" type="checkbox" @bind-value="direcciones.Verificacion" id="Verificacion">
+        <label class="form-check-label" for="Verificacion">@direcciones.Verificacion</label>
+         </div>
+         </Authorized>
+         </AuthorizeView>
 
         
         <div class="mb-2">
@@ -44,6 +57,8 @@
 
         }
         </InputSelect>
+
+
         </div>
 
 
@@ -112,3 +127,5 @@
 
 
 }
+ </Authorized>
+       </AuthorizeView>

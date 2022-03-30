@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RutaSegura", "RutaSegura.csproj", "{00645237-9407-4126-BF20-3A6798D5A200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00645237-9407-4126-BF20-3A6798D5A200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00645237-9407-4126-BF20-3A6798D5A200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00645237-9407-4126-BF20-3A6798D5A200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00645237-9407-4126-BF20-3A6798D5A200}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4137C9E-3524-40F8-AE62-C834C6EAABDC}
+	EndGlobalSection
+EndGlobal

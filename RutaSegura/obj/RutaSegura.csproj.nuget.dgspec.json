@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj": {}
+    "C:\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj": {}
   },
   "projects": {
-    "C:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj": {
+    "C:\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj",
+        "projectUniqueName": "C:\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj",
         "projectName": "RutaSegura",
-        "projectPath": "C:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj",
+        "projectPath": "C:\\BlazorWebApp\\RutaSegura\\RutaSegura.csproj",
         "packagesPath": "C:\\Users\\Luiss\\.nuget\\packages\\",
-        "outputPath": "C:\\AplicacionesWebparaI14.0\\BlazorWebApp\\RutaSegura\\obj\\",
+        "outputPath": "C:\\BlazorWebApp\\RutaSegura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Luiss\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,9 +42,31 @@
               "target": "Package",
               "version": "[2.0.1, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.16.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
